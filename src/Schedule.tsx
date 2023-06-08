@@ -49,8 +49,6 @@ const StationRow = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
-    width: 100%;
     color: #8ecccc;
 `
 const format24Hour = (date: Date) => {
@@ -87,9 +85,8 @@ export const EpgTimetable: React.FC<StationsProps> = ({
                         )}
                         key={scheduleIndex}
                     >
-                        {' '}
                         {schedule.title} <span />
-                        {format24Hour(new Date(schedule.start))} -{' '}
+                        {format24Hour(new Date(schedule.start))} -
                         {format24Hour(new Date(schedule.end))}
                     </Schedule>
                 ))}

@@ -23,9 +23,6 @@ interface Schedule {
 export interface StationsProps {
     stationsSchedules: EPG[]
 }
-interface SchedulesProps {
-    stationsSchedules: EPG[]
-}
 const Grid = styled.div`
     display: grid;
     background-color: #50717b;
@@ -34,15 +31,12 @@ const TimelineContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: start;
-    position: sticky;
 `
-
 const CalendarContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #8ecccc;
-    font: 
     justify-content: center;
     height: 12vh;
     background-color: #3a4042;
@@ -52,8 +46,6 @@ const ScrollableContainer = styled.div`
     grid-template-areas:
         'TimelineContainer'
         'StationsSchedulesContainer';
-    width: 100%;
-    height: 100%;
     overflow: auto;
 `
 export const ProgramGuidePage: React.FC = () => {

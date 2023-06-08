@@ -8,6 +8,7 @@ const TimelineContainer = styled.div`
     background-color: #3a4042;
     padding-top: 3vh;
     border-top: 1px solid rgb(41, 74, 102);
+    padding-right: 5vw;
 `
 const EmptySpace = styled.div`
     display: flex;
