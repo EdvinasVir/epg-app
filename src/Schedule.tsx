@@ -85,7 +85,7 @@ export const EpgTimetable: React.FC<StationsProps> = ({
                         )}
                         key={scheduleIndex}
                     >
-                        {schedule.title} <span />
+                        {schedule.title} <span /> <br/>
                         {format24Hour(new Date(schedule.start))} -
                         {format24Hour(new Date(schedule.end))}
                     </Schedule>
